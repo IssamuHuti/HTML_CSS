@@ -1,4 +1,10 @@
 <!-- 
+HTML
+HTML cria caixas de forma ordenada no site
+HTML funciona sem CSS, porém o layout da página ficara todo desconfigurado
+
+site disponibilizado pelo professor para editar de forma iteravel
+exemplo: https://codepen.io/luizomf/pen/KKNwMeG
 
 open with live server permite acessar as alterações que são feitas no arquivo html criando um servidor teste 
 HTML é caseincensitive
@@ -151,5 +157,94 @@ exemplo:
 <... id=""> o "id" é um atributo que nomeia uma tag, e as tagas não podem ser nomeadas com mesmo "id"
 <... class=""> o "class" é um atributo que nomeia uma tag também, porém pode ser repetida várias vezes
 os atributos "id" e "class" podem ser utilizadas várias vezes dentro de uma tag, porém dentro do mesmo chamado
+
+
+é possível colocar as configurações do formato CSS dentro de um arquivo CSS para importar para dentro do site
+informar:
+<link rel="stylesheet" href="">
+    * rel = o tipo de arquivo que será conectado
+    * href = informa o local do arquivo da qual irá conectar 
+        "./assets/css/styles.css"
+
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+CSS
+CSS atribui estilo ao HTML
+
+se informar !important, ela sobreescreve qualquer comando que especificar, a menos que informe com outro !important
+
+seleção de um atributo do HTML
+- all:
+    * * {}
+- tag:
+    * h1 {}
+    * p {}
+- seleção de dependentes:
+    * body h1 {}
+- id:
+    
+- class:
+    - pode-se informar mais de uma classe para cada tag
+    * .nomedaclasse {}
+    * div.nomedaclasse {}
+    * .nomedaclasse .outraclassedasubtag {}
+        - se der caracteristica no primeiro tag, mas no segundo não, a segunda tag herda as caracteristicas do primeiro se não tiver configuração 
+        - se caracterizar somente a segunda, a primeira não sofre nenhuma alteração
+    * .nomedaclasse h1.outraclassedasubtag {}
+    * .nomedaclasse.outraclassedasubtag {}
+        - seleciona somente se na classe informado na tag tiver as duas classes selecionadas
+    * .pai > .filha {} 
+        - precisa informar especificamente que a tag filha está ligada ao tag pai
+    * .pai h1+p {}
+        - seleciona o primeiro elemento após o h1 para configuração
+    * .pai h1~p {}
+        - seleciona todos os elementos após o primeiro elemento para configuração
+
+- pseudo class:
+    - atribui alguma caracteristica para os elementos das classes
+    * .class:hover {} se passar por cima do elemento no site com o cursor do mouse, esse elemento é afetado por ela
+        .heading {
+            transition: all 300ms ease-in-out; permite o elemento heading mudar de cor de forma gradual 
+        }
+        .heading:hover {
+            background: red;
+            color: orange; muda a cor do hiperlink assim que já tenha sido acessado uma vez para laranja
+            text-decoration: none; retira o sublinhado do hiperlink
+        }
+    * .a:link {} utilizado em elementos que tem vinculação com link para outros sites
+      .a:link {
+        color: darkslatebluee; altera o fundo do elemento para outra cor
+        }
+    * .a:visited {} utilizado em elementos que possuem hiperlinks que já foram acessadas pelo site
+      .a:visited {
+        color: pink;
+      }
+    * .a:active {} utilizado para o momento de permanecer selecionado o elemento com o mouse
+    * input:focus {} cria configuração para caixa input do tipo sombra
+        - boxshadow: 0, 0, 5px red
+    * p:not() {} nega uma informação limitada dentro de alguma tag
+    * ul li:nth-child() {} seleciona os itens que foi escolhido dentro de tags filhos do mesmo nivel
+        - odd = pares
+        - even = impares
+        - 3n = de tres em tres
+        - 3n+5 = de tres em tres a partir do quinto item
+- pseudo elemento
+    * ul li::after {} informa depois de atribuir texto dentro de uma tag
+        ul li::aftor {
+            content: ' - '; 
+        }
+    * ul li::before {} informa antes de atribuir texto dentro de uma tag
+        ul li::aftor {
+            content: ' - '; 
+        }
+    * p::first-letter {} cria uma caracteristica especial para primeira letra do texto
+    * p::first-line {} destaca a primeira linha do texto com configurações especificas
+    * p::selection {} caracteriza texto que for selecionado pelo cursor do mouse
+    * ::placeholder {} caracteriza todos os placeholders do site
+
+
+- atributo:
+    * [atributo] {} é possível selecionar atributos para sofrer configurações, como checked, class, id
 
 -->
