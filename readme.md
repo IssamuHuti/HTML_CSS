@@ -166,6 +166,12 @@ informar:
     * href = informa o local do arquivo da qual irá conectar 
         "./assets/css/styles.css"
 
+Composição da caixa do HTML
+1- margem
+2- borda
+3- caixa
+4- margem interna
+5- conteudo da caixa
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
@@ -173,6 +179,18 @@ CSS
 CSS atribui estilo ao HTML
 
 se informar !important, ela sobreescreve qualquer comando que especificar, a menos que informe com outro !important
+elementos inlines não pega as alterações para alguns casos
+
+atribuição de tamanho:
+10 5 10 8
+- 10 no topo
+- 5 direita
+- 10 embaixo
+- 8 esquerda
+
+10 5
+- 10 em cima e em baixo
+- 5 na direita e na esquerda
 
 seleção de um atributo do HTML
 - all:
@@ -246,5 +264,104 @@ seleção de um atributo do HTML
 
 - atributo:
     * [atributo] {} é possível selecionar atributos para sofrer configurações, como checked, class, id
+
+COMANDOS CSS
+- box-sizing: border-box - informa que até as bordas estão dentro da caixa na hora de atribuir tamanho para elas
+- background: altera a cor do fundo
+    * nomear com nomes de cor em inglês
+    * #000000 exxa decimal, podem entrar na composição (ABCDEF0123456789)
+    * #000 
+    * rgb(10, 10, 10) para cada campo, o número máximo é 256
+    * rgba(10, 10, 10, 10) para cada campo, o número máximo é 256, é o último campo é de 0 a 1, demonstrando opacidade do fundo
+- color: altera a cor das letras
+- width: informa a largura de uma caixa html
+    * px (unidade de medida absoluta)
+    * % (unidade de medida relativa)
+    * rem (unidade de medida relativa) utiliza um outro elemento de unidade de medida para fazer proporção dela, pegando a informação de um elemento mais longe, multiplicando pelo valor da medida do elemento referencia o valor informado na unidade de medida
+    * em (unidade de medida relativa) utiliza um outro elemento de unidade de medida para fazer proporção dela, pegando a informação de um elemento mais próximo, multiplicando pelo valor da medida do elemento referencia o valor informado na unidade de medida
+    * vw (unidade de medida relativa) utiliza a tela como referencia, indo de 0 a 100%
+    * vh
+- height: informa a altura de uma caixa html
+    * px
+    * %
+    * rem
+    * em
+    * vw
+    * vh
+- max-width: delimita a largura máxima da página (utilizar somente em casos de width: 100%)
+- max-height: delimita a altura máxima da página (utilizar somente em casos de height: 100%)
+- overflow: informa como tratar os limites da caixa
+    * auto
+- margin: informa a posição da caixa no meio da página
+    * 0 auto
+- padding: o espaço que se dá da borda até o conteúdo da caixa
+- border: cria margem ao redor da caixa
+- display: define como um elemento é exibido no navegador
+    * block
+    * inline
+    * inline-block
+- float: joga o próximo elemento para um lado
+    * left
+    * right
+    * top
+    * down
+    * both - limpa as duas laterais do elemento
+* optar por usar display ou float
+- clear: o elemento se desloca para um local sem elemento selecionado ao lado dele
+    * left
+    * right
+    * top
+    * down
+    * both - limpa as duas laterais do elemento
+
+configuração para textos
+- font-size
+- font-style
+- font-weight: bold; negrito
+- direction: ltr; direção da esquerda para direita
+- letter-spacing: px; espaço entre as letras
+- word-spacing: px; espaco entre as palavras
+- line-height: px; altura entre duas linhas
+- text-align: center, right or left; alinhamento do texto
+- text-decoration: 
+    * overline; cria linha em cima do texto
+    * line-through; risca o texto
+    * line-underline; sublinha o texto
+- text-indent: px; cria paragrafo
+- text-shadow: 2 px 2 px 5 #cor; cria sombra no texto
+    1 move para lado
+    2 move para baixo
+    3 borra a sombra
+    4 informar cor da sombra
+- text-transform: 
+    * lowercase: deixa tudo minusculo
+    * uppercase: deixa tudo maiuscula
+    * capitalize: as primeiras letras das palavras ficam em maiusculo
+
+Posicionamento
+- top: px; abaixasse em relação ao topo da página
+- left: px; saisse da esquerda em relação ao lado esquerdo da página
+- right: px; saisse da direita em relação ao lado direito da página
+- bottom: px; saisse de baixo em relação ao fundo da página
+- position: 
+    * relative - mesmo se alterar o local do elemento, no lugar onde o elemento estava, vai constar como ocupado para o sistema, e nenhum outro elemento pode ocupar o lugar original dela
+    * absolute - retira definitivamente o elemento da posição inicial e permite outro elemento ocupe o lugar
+    * fixad - fixa o elemento, independente de rolar display pra baixo e pra cima
+    * sticky - fixa o elemento até que outro elemento seja citado na página, 
+- width: 100% ou auto - essas duas estão informando que pegam todo o site para aplicar condições especiais
+- height: 100% ou auto
+- z-index: ; informa o número da camada que o elemento se encontra
+
+breakpoints (altera a configuração de acordo com o tamanho da tela)
+- @media all {max-width: xxx px} {
+    .algumaClassComMedidas {
+        width: 100%; 
+    }
+}
+- @media all and {min-width: xxx px} and {min-width: xxx px} {
+    .algumaClassComMedidas {
+        width: 50%;
+    }
+}
 
 -->
