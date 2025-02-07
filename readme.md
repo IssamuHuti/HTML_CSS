@@ -313,6 +313,14 @@ COMANDOS CSS
     * top
     * down
     * both - limpa as duas laterais do elemento
+- border-radius: arredonda as quinas das caixas
+    * px
+- box-shadow: x x x x cor
+    * primeiro x: move pra esquerda(negativo) ou direita(positivo)
+    * segundo x: move para cima(negativo) ou para baixo(positivo)
+    * terceiro x: cria efeito de desfocamento
+    * quarto x: tamanho da sombra para terceiro x
+    * inset: sobra pra dentro da caixa
 
 configuração para textos
 - font-size
