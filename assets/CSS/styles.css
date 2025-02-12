@@ -5,7 +5,9 @@
 }
 
 body {
-    font-family: sans-serif;
+    font: sans-serif;
+    font-size: 40px;
+    color: red;
 }
 
 .menu {
@@ -32,4 +34,12 @@ body {
 
 .menu ul li a:hover {
     background: #333;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid div {
+    background: tomato;
 }
