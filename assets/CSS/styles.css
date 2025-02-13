@@ -10,36 +10,26 @@ body {
     color: red;
 }
 
-.menu {
-    width: 100%;
-    position: fixed;
+h2 {
+    color: black;
+    background: yellow;
+}
+
+.segundoTexto {
+    color: white;
     background: black;
 }
 
-.menu ul {
-    list-style: none;
-    display: block;
-    max-width: 1200px;
-    padding: 0 30px;
-    margin: 0 auto;
+.largura {
+    width: 200px;
+    height: 200px;
 }
 
-.menu ul li a {
-    display: block;
-    color: #fff;
-    padding: 20px;
-    text-decoration: none;
-    transition: all 300ms ease-in-out;
+code {
+    background: gray;
 }
 
-.menu ul li a:hover {
-    background: #333;
-}
-
-.grid {
-    display: grid;
-}
-
-.grid div {
-    background: tomato;
+.span {
+    color:brown;
+    font-size: 60px;
 }
