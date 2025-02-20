@@ -7,16 +7,35 @@
     <link rel="stylesheet" href="assets/CSS/styles.css">
 </head>
 <body>
+    <header>
     <h1>Primeiro titulo</h1>
-    <p class="primeiroTexto">
-        <q cite="https://br.lipsum.com/" >Lorem</q> ipsum dolor sit, amet consectetur adipisicing elit. Quidem impedit eius nesciunt esse laboriosam minus eum voluptatem perferendis architecto? Eaque velit id <div>quasi beatae</div> doloribus at! Deserunt fuga explicabo odit!
-    </p>
-    <h2>Segundo titulo</h2>
-    <p class="segundoTexto">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem impedit eius nesciunt esse laboriosam minus eum voluptatem <span class="span">perferendis</span> architecto? Eaque velit id quasi beatae doloribus at! Deserunt fuga explicabo odit!<br>
-        H<sub>2</sub>O <br> 
-        1024<sup>2</sup>
-    </p>
+        <p class="primeiroTexto">
+            <q cite="https://br.lipsum.com/" >Lorem</q> ipsum dolor sit, amet consectetur adipisicing elit. Quidem impedit eius nesciunt esse laboriosam minus eum voluptatem perferendis architecto? Eaque velit id <div>quasi beatae</div> doloribus at! Deserunt fuga explicabo odit!
+        </p>
+    </header>
+    <section>
+        <header>
+            <p class="segundoTexto">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem impedit eius nesciunt esse laboriosam minus eum voluptatem <span class="span">perferendis</span> architecto? Eaque velit id quasi beatae doloribus at! Deserunt fuga explicabo odit!<br>
+                H<sub>2</sub>O <br> 
+                1024<sup>2</sup>
+            </p>
+        </header>
+
+        <article>
+            <h3>header 3</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias voluptate eaque exercitationem excepturi impedit veniam enim doloremque nostrum at illum numquam ullam laudantium, ad quae obcaecati, aspernatur laborum iure necessitatibus.
+            </p>
+        </article>
+
+        <article>
+            <h3>header 3</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias voluptate eaque exercitationem excepturi impedit veniam enim doloremque nostrum at illum numquam ullam laudantium, ad quae obcaecati, aspernatur laborum iure necessitatibus.
+            </p>
+        </article>
+    </section>
     <blockquote>será separada por bloco</blockquote>
     <a href="https://www.google.com.br/?hl=pt-BR" target="_blank">Google</a>
     <img src="https://conteudo.imguol.com.br/c/noticias/c2/2022/01/14/bitcoin-grafico-economia-1642179101668_v2_450x450.jpg.webp" alt="Imagem do Bitcoin" class="largura">
@@ -32,17 +51,33 @@
               s1, s2 = set(word1), set(word2)
               return [''.join(sorted(i)) for i in [s1&s2, s1-s2, s2-s1]]</code>
     </pre>
-    <ul>
-        <li>um</li>
-        <li>dois</li>
-        <li>tres</li>
-        <li>quatro</li>
-    </ul>
+
+    <aside>
+        <ul>
+            <li><a href="#">um</a></li>
+            <li><a href="#">dois</a></li>
+            <li><a href="#">tres</a></li>
+            <li><a href="#">quatro</a></li>
+        </ul>
+    </aside>
+
     <ol>
         <li>um</li>
         <li>dois</li>
         <li>tres</li>
         <li>quatro</li>
     </ol>
+
+    <div id="teste1">
+        teste 1
+        <div style="width: 50px; height: 50px; background: orange; float: left;"></div>
+        <div style="width: 50px; height: 50px; background: blueviolet; float: left;"></div>
+        <div style="width: 50px; height: 50px; background: gold; float: left;"></div>
+    </div>
+
+    <footer>
+        Endereço: Avenida Brasil, 123
+        Telefone: (xx) xxxxx-xxxx
+    </footer>
 </body>
 </html>

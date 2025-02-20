@@ -33,3 +33,12 @@ code {
     color:brown;
     font-size: 60px;
 }
+
+div {
+    width: 200px;
+    height: 100px;
+    background: green;
+    color: black;
+    font-size: 18px;
+    text-align: center;
+}

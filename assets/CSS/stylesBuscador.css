@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://preview.redd.it/s7dp9of3mqn41.png?width=1080&crop=smart&auto=webp&s=9b128f45677680e4c710763bd5059b73f555c9ea);
+    background-size: cover;
+    background-position: top center;
+}
+
+#heading {
+    background: rgba(0, 0, 0, 8);  
+}
+
+#heading div {
+    width: 90%;
+
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+#heading .h1 {
+    font-size: 24px;
+    text-transform: uppercase;
+    padding: 15px 0;
+}
+
+#heading .h1 a {
+    color: white;
+    text-decoration: none;
+    font-family: monospace;
+}
