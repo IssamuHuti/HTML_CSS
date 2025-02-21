@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs</title>
+    <link rel="stylesheet" href="assets/CSS/styles3.css">
+</head>
+<body>
+    <form action="#" method="get" target="_blank" autocomplete="off">
+        <p>O meu formulário</p>
+        <p>
+            <label>
+                Nome:
+                <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+            </label>
+        </p>
+
+        <p>
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" id="sobrenome" name="nome" placeholder="Seu nome" value="None">
+        </p>
+
+        <p>
+            <label for="dNascimento">Data Nascimento:</label>
+            <input type="date" id="dNascimento" name="nascimento" value="1998-02-20"><br>
+        </p>
+
+        <p>
+            <label for="dev">Sou um DEV:</label>
+            <input type="checkbox" id="dev" name="dev" value="desenvolvedor"><br>
+            <label for="med">Sou um MED:</label>
+            <input type="checkbox" id="med" name="med" value="medico"><br>
+            <label for="adv">Sou um ADV:</label>
+            <input type="checkbox" id="adv" name="adv" value="advogado"><br>
+        </p>
+
+        <p>
+            Profissão:<br>
+            <label for="dev">Sou um DEV:</label>
+            <input type="radio" id="dev" name="profissao" value="desenvolvedor"><br>
+            <label for="med">Sou um MED:</label>
+            <input type="radio" id="med" name="profissao" value="medico"><br>
+            <label for="adv">Sou um ADV:</label>
+            <input type="radio" id="adv" name="profissao" value="advogado"><br>
+        </p>
+
+        <p>
+            <button type="reset">Reset</button>
+            <button type="submit">Enviar</button>
+        </p>
+
+        <p>
+            <label for="cor">Data Nascimento:</label>
+            <input type="color" id="cor" name="cor"><br>
+        </p>
+
+        <p>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="email@email.com"><br>
+        </p>
+        
+        <p>
+            <label for="file">Sua foto:</label>
+            <input type="file" id="file" name="file" accept=".png, .pdf" multiple><br>
+        </p>
+        
+        <p>
+            <label for="number">Number:</label>
+            <input type="number" id="number" name="number" placeholder="Num" min="10" max="50"><br>
+        </p>
+        
+        <p>
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" placeholder="Digite a senha"><br>
+        </p>
+        
+        <p>
+            <label for="Range">Range:</label>
+            <input type="Range" id="Range" name="Range" min="0" max="10" step="2"><br>
+        </p>
+        
+        <p>
+            <label for="Range">Range:</label>
+            <input type="Range" id="Range" name="Range" list="tickmarks"><br>
+            <datalist id="tickmarks">
+                <option value="0" label="0%"></option>
+                <option value="10"></option>
+                <option value="20"></option>
+                <option value="30"></option>
+                <option value="40"></option>
+                <option value="50" label="50%"></option>
+                <option value="60"></option>
+                <option value="70"></option>
+                <option value="80"></option>
+                <option value="90"></option>
+                <option value="100" label="100%"></option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="url">Sua URL:</label>
+            <input type="url" id="url" name="url" placeholder="URL"><br>
+        </p>
+
+        <p>
+            <label for="search">Pesquisar:</label>
+            <input type="search" id="search" name="search" placeholder="search"><br>
+        </p>
+
+        <p>
+            <label for="select">Seleciona alguma opção:</label>
+            <select name="select" id="select" multiple>
+                <optgroup label="Recomendadas">
+                    <option value="Selecione uma opção">escolha</option>
+                    <option value="primeiro">Primeiro</option>
+                    <option value="segundo" selected>Segundo</option>
+                    <option value="terceiro" disabled>Terceiro</option>
+                </optgroup>
+
+                <optgroup label="Alternativoas">
+                    <option value="quarto">quarto</option>
+                    <option value="quinto">quinto</option>
+                    <option value="sexto">sexto</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="textarea">Descrição:</label>
+            <textarea name="textarea" id="textarea" rows="5" placeholder="Descreva uma descrição">
+
+            </textarea>
+        </p>
+    </form>
+
+</body>
+</html>
