@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section-one {
+    background: deeppink;
+    border: 5px solid black;
+    padding: 15px;
+    font-size: 36px;
+}
+
+.section-two {
+    background: cyan;
+    font-size: 36px;
+}
+
+.section-three {
+    width: 400px;
+    height: 250px;
+    background-image: url(https://ehgomes.com.br/wp-content/uploads/2024/11/1MM-380.webp);
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    border-style: solid;
+    border-width: 10px;
+    border-bottom-width: 100px;
+    border-bottom-color: firebrick;
+    border-top-color: greenyellow;
+    border-right-color: pink;
+    border-left-color: gray;
+    padding: 10px;
+    margin: 20px;
+}
