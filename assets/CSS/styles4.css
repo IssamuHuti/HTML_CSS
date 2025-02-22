@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: yellow;
+}
+
+.heading {
+    color: red;
+    transition: all 0.5s ease-in-out;
+}
+
+.heading:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+[checked] {
+    width: 50px;
+    height: 50px;
+}
+
+a {
+    color: green;
+    text-decoration: none;
+}
+
+a:link {
+    color: deeppink;
+}
+
+a:visited {
+    color: firebrick;
+}
+
+a:hover {
+    background: black;
+    color: white;
+}
+
+a:active {
+    background: darkorchid;
+    color:aliceblue;
+}
+
+.texto {
+    width: 500px;
+    height: 30px;
+}
+
+input:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    outline: none;
+    border: 1px solid black;
+}
+
+input:disabled {
+    background: yellow;
+    cursor: not-allowed;
+}
+
+.caixa:checked {
+    width: 50px;
+    height: 50px;
+}
+
+.caixa:checked + p {
+    background: cyan;
+}
+
+p:not(.meio) {
+    color: brown;
+}
+
+li {
+    color: initial;
+}
+
+ul li:nth-child(even) {
+    background: purple;
+}
+
+ul li:nth-child(odd) {
+    background: greenyellow;
+}
+
+ul li:nth-child(3n) {
+    background: red;
+}
+
+ul li:nth-child(4n+6) {
+    background: gray;
+}
+
+ul li::after {
+    content: ' - ';
+    display: block;
+}
+
+ul li::before {
+    content: ' - ';
+}
+
+#p-teste::first-letter {
+    font-size: 50px;
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+#p-teste::selection {
+    background: black;
+    color: white;
+}
+
+#first-line::first-line {
+    background: blue;
+}
+
+::placeholder {
+    color: green;
+}

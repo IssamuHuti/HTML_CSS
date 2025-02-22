@@ -1,0 +1,53 @@
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.pai {
+    width: 50rem;
+    height: 100vh;
+    background: yellow;
+    overflow: hidden;
+}
+
+.pai > div {
+    width: 50%;
+    height: 50rem;
+    background: blue;
+}
+
+p {
+    font-size: 1.6rem;
+    color: brown;
+    background-color: aqua;
+    font-style: italic;
+    font-weight: bold;
+    direction: rtl;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: line-through underline;
+    text-indent: 50px;
+    text-shadow: 2px 2px 5px black;
+    text-transform: capitalize;
+}
+
+.color-one {
+    background: turquoise;
+}
+
+.color-two {
+    background: violet;
+}
+
+a {
+    font-size: 54px;
+    padding: 10px;
+}

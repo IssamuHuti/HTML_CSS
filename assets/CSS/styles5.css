@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* .texto {
+    display: block;
+    background: red;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.texto2 {
+    display: block;
+    background: red;
+    width: 100%;
+    height: 200px;
+    overflow: scroll;
+}
+
+.texto3 {
+    display: block;
+    background: red;
+    width: 100%;
+    height: 200px;
+    overflow-y: auto;
+}
+
+div:not(.grid .col) {
+    box-sizing: border-box;
+    max-width: 900px;
+    max-height: 900px;
+    min-width: 30%;
+    min-height: 30%;
+    margin: 0 auto 50px auto;
+    padding: 20px;
+    border: 5px double black;
+} */
+
+.grid {
+    padding: 15px;
+}
+
+.grid::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.grid .col {
+    width: 33.33%;
+    height: 300px;
+    float: left;
+    padding: 15px;
+}
+
+.grid .col-content {
+    width: 100%;
+    height: 100%;
+    background: yellow;
+}
+
