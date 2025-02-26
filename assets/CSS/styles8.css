@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container {
+    display: flex; /* permite o livre manuseio dos itens dentro da tag contendo essa classe*/
+    /* flex-direction: row; indica o formato que os itens devem seguir */
+    justify-content: space-between; /* alinha os itens a partir da posição do primeiro item indicado, pode ser o primeiro ou ultimo como exemplo e outras formas de distribuição dos itens dentro do flex-container*/
+    /* flex-wrap: wrap; */
+    align-items: flex-start; /*configura a altura dos itens dentro da div*/
+    /* align-content: stretch; */
+    flex-flow: row nowrap;
+    background: yellow; 
+    height: 800px;
+    /* gap: 30px; */
+}
+
+.flex-item {
+    /* flex-grow: 1;
+    flex-basis: 320px;
+    flex-shrink: 0; não permite diminuir mais do que já foi estabelecida */
+    /* flex: 1 1 320px; */
+    color: white;
+    /* margin-bottom: 2%; */
+    /* height: 200px; */
+    background: red;
+    /* margin: 10px; */
+    width: 100%;
+}
+
+.flex-item:nth-child(2) {
+    background: purple;
+}
+
+.flex-item:nth-child(3) {
+    align-self: flex-end;
+    order: 1;
+}
+
+.flex-item:nth-child(5) {
+    align-self: flex-center;
+}
+
+.flex-item:nth-child(4) {
+    align-self: stretch;
+}
+
+.two-columns {
+    display: flex;
+}
+
+.two-columns .col {
+    display: flex;
+    flex-direction: column;
+    background: blue;
+    margin: 15px;
+    padding: 30px;
+}
+
+p {
+    margin: 0 0 20px;
+}
+
+.gallery {
+    flex-flow: row wrap;
+    display: flex;
+}
+
+.gallery .img {
+    flex: 1 0 20px;
+    height: 50px;
+    background: orange;
+    margin: 10px;
+}
