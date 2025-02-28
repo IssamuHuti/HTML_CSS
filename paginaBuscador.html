@@ -23,8 +23,32 @@ Criar uma página com layout de site d pesquisa que nem google
     </header>
 
     <div id="fundo">
-        <h1>Digite o que você procura</h1>
-        <input class="texto" placeholder="O que procura?">
+        <section>
+            <h1>Digite o que você procura</h1>
+            <div class="input-container">
+                <input type="search" class="texto" placeholder="O que procura?" id="searchInput">
+                <button class="clear-btn" id="clearButton">&times;</button>
+            </div>
+        </section>
+
+        <script>
+            const input = document.getElementById("searchInput");
+            const clearButton = document.getElementById("clearButton");
+    
+            input.addEventListener("input", function() {
+                if (input.value.length > 0) {
+                    clearButton.style.display = "block"; // Mostra o botão
+                } else {
+                    clearButton.style.display = "none"; // Esconde o botão
+                }
+            });
+    
+            clearButton.addEventListener("click", function() {
+                input.value = ""; // Apaga o texto do input
+                clearButton.style.display = "none"; // Esconde o botão
+                input.focus(); // Mantém o foco no input
+            });
+        </script>
     </div>
 </body>
 </html>
