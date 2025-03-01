@@ -7,14 +7,22 @@ Criar uma página com layout de site d pesquisa que nem google
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buscador</title>
-    <link rel="stylesheet" href="assets/CSS/stylesBuscador.css">
+    <link rel="stylesheet" href="/assets/CSS/stylesBuscador.css">
 </head>
 <body>
     <header id="heading">
-        <div>
-            <h2 class="h1">
-                <a href="#">Logo</a>
-            </h2>
+        <div class="positionHeading">
+            <div class="temas h1">
+                <label for="h1">Temas:</label>
+                <input id="preto" type="radio" name="tema" value="preto" checked>
+                <label for="preto" class="radio-label preto"></label>
+
+                <input id="verde" type="radio" name="tema" value="verde">
+                <label for="verde" class="radio-label verde"></label>
+
+                <input id="azul" type="radio" name="tema" value="azul">
+                <label for="azul" class="radio-label azul"></label>
+            </div>
 
             <h2 class="h1">
                 <a href="#">Login</a>

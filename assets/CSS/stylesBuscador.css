@@ -5,7 +5,7 @@
 }
 
 #fundo {
-    background-image: url("assets/IMG/fundo1.jpg");
+    background-image: url("/assets/IMG/fundo1.jpg");
     background-size: cover;
     background-position: top center;
     width: 100%;
@@ -22,27 +22,70 @@
     width: 100%;
 }
 
-#heading div {
+#heading .positionHeading {
     width: 90%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /*separou os conteudos nos extremos*/
+    align-items: center; /*centralizou no eixo y do cabeçalho*/
     margin: 0 auto;
+}
+
+.temas {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Esconde o input original */
+.temas input[type="radio"] {
+    display: none;
+}
+
+/* Estilo para os novos botões de rádio */
+.radio-label {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+    border: 2px solid white;
+    transition: transform 0.2s;
+}
+
+.preto { 
+    background-color: black;
+}
+
+.verde {
+    background-color: green;
+}
+
+.azul {
+    background-color: blue;
+}
+
+/* Efeito ao selecionar */
+.temas input[type="radio"]:checked + .radio-label {
+    transform: scale(1.2);
+    border: 4px solid white;
 }
 
 #heading .h1 {
     font-size: 24px;
     text-transform: uppercase;
     padding: 15px 0;
+    color: white;
+    font-family: monospace;
+    font-weight: bold;
 }
 
 #heading .h1 a {
-    color: white;
     text-decoration: none;
-    font-family: monospace;
 }
 
 #fundo section {
-    width: 80%;
+    width: 70%;
     height: 50%;
     background: rgba(0, 0, 0, 0.9);
     z-index: 1;
@@ -105,3 +148,11 @@ h1 {
     text-align: center;
     line-height: 30px;
 }
+
+.temas:has(#azul:checked) #heading {
+    background: rgb(17, 2, 104);
+    position: fixed;
+    width: 100%;
+}
+
+/* esperar aprender a usar Django ou Javascript para dar continuidade */
