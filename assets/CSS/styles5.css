@@ -52,6 +52,7 @@ div:not(.grid .col) {
     padding: 15px;
     margin: 0 auto;
     padding-top: 73px;
+    background: cyan;
 }
 
 .grid::after {

@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.corpo {
+    width: 100%;
+    height: 500vh;
+    background: cyan;
+}
+
+.caixaOpcao {
+    width: 150px;
+    height: 250px;
+    background: orange;
+    position: fixed;
+    top: 33.33%;
+}
+
+ul {
+    height: 100%;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+li {
+    float: left;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    transition: all 300ms ease-in-out;
+}
+
+a:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    background: black;
+    position: fixed;
+}
+
+h1 {
+    color: white;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.regiao {
+    max-width: 1200px;
+    height: 100vh;
+    margin: 0 auto;
+    padding-top: 80px;
+    background: yellow;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    border: 1px;
+    border-color: black;
+}
+
+.regiao::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.regiao .img {
+    width: 24%;
+    height: 30%;
+    padding: 0 10px 0 10px;
+    align-items: center;
+}
+
+.regiao .local {
+    width: 100%;
+    height: 100%;
+    background: red;
+    border: 1px;
+    border-color: black;
+}
+
+.titulo {
+    font-size: 36px;
+    padding-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.descricao {
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+}
