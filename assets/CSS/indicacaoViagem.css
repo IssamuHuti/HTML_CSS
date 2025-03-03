@@ -11,13 +11,29 @@ html {
 .corpo {
     width: 100%;
     height: 500vh;
-    background: cyan;
+    background: whitesmoke;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    background: darkgreen;
+    position: fixed;
+}
+
+h1 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 15px;
 }
 
 .caixaOpcao {
     width: 150px;
     height: 250px;
-    background: orange;
+    background: darkgreen;
     position: fixed;
     top: 33.33%;
 }
@@ -31,52 +47,54 @@ ul {
     text-align: center;
     list-style: none;
     margin: 0 auto;
-    padding: 0 30px;
+    padding: 0;
 }
 
 li {
-    float: left;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-a {
+.opcao {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 10px 0;
     text-decoration: none;
     font-weight: bold;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transition: all 300ms ease-in-out;
+    color: white;
 }
 
-a:hover {
+.opcao:hover {
     background: rgba(0, 0, 0, 0.5);
 }
 
-header {
+.titulo {
+    font-size: 48px;
+    padding-top: 40px;
     width: 100%;
-    height: 70px;
-    background: black;
-    position: fixed;
-}
-
-h1 {
-    color: white;
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
+    text-align: center;
 }
 
 .regiao {
-    max-width: 1200px;
+    max-width: 1300px;
     height: 100vh;
     margin: 0 auto;
     padding-top: 80px;
-    background: yellow;
+    background: greenyellow;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
     border: 1px;
-    border-color: black;
+    border-color: darkgreen;
 }
 
 .regiao::after {
@@ -86,29 +104,181 @@ h1 {
 }
 
 .regiao .img {
-    width: 24%;
-    height: 30%;
-    padding: 0 10px 0 10px;
+    width: 21%;
+    height: 35%;
     align-items: center;
+    margin: 0 10px 0 10px;
+}
+
+.regiao .img:hover {
+    width: 25%;
+    height: 38%;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 10px 10px 20px black;
+    font-size: 30px;
 }
 
 .regiao .local {
     width: 100%;
-    height: 100%;
+    height: 90%;
     background: red;
-    border: 1px;
-    border-color: black;
-}
-
-.titulo {
-    font-size: 36px;
-    padding-top: 20px;
-    width: 100%;
-    text-align: center;
+    border: 5px solid;
+    border-color: darkgreen;
 }
 
 .descricao {
+    font-size: 22px;
     font-weight: bold;
     text-align: center;
     padding-top: 10px;
+}
+
+.linkViagem {
+    text-decoration: none;
+    color: black;
+}
+
+#norte1 {
+    background-image: url(/assets/IMG/viagem/amazonasAMNorte.jpg);
+    background-size: cover;
+    background-position: top center;
+}
+
+#norte2 {
+    background-image: url(/assets/IMG/viagem/encontroAguasAMNorte.jpg);
+    background-size: cover;
+    background-position: top center;
+}
+
+#norte3 {
+    background-image: url(/assets/IMG/viagem/teatroAmazonasAMNorte.jpg);
+    background-size: cover;
+    background-position: top center;
+}
+
+#norte4 {
+    background-image: url(/assets/IMG/viagem/marcoZeroAPNorte.jpg);
+    background-size: cover;
+    background-position: top center;
+}
+
+#norte5 {
+    background-image: url(/assets/IMG/viagem/alterDoChaoPANorte.jpg);
+    background-size: cover;
+    background-position: top center;
+}
+
+#norte6 {
+    background-image: url(/assets/IMG/viagem/ilhaDeMarajoPANorte.jpg);
+    background-size: cover;
+    background-position: top center;
+}
+
+#norte7 {
+    background-image: url(/assets/IMG/viagem/monteRoraimaRRNorte.jpg);
+    background-size: cover;
+    background-position: top center;
+}
+
+#norte8 {
+    background-image: url(/assets/IMG/viagem/jalapaoTONorte.jpg);
+    background-size: cover;
+    background-position: top center;
+}
+
+#nordeste1 {
+    background-image: url(/assets/IMG/viagem/canionXingoSENordeste.jpg);
+    background-size: cover;
+    background-position: top center;
+}
+
+#nordeste2 {
+    background-image: url(/assets/IMG/viagem/chapadaDiamantinaBANordeste.jpg);
+    background-size: cover;
+    background-position: top center;
+}
+
+#nordeste3 {
+    background-image: url(/assets/IMG/viagem/fernandoNoronhaPENordeste.jpg);
+    background-size: cover;
+    background-position: top center;
+}
+
+#nordeste4 {
+    background-image: url(/assets/IMG/viagem/lencoisMaranhensesMANordeste.jpg);
+    background-size: cover;
+    background-position: top center;
+}
+
+#nordeste5 {
+    background-image: url(/assets/IMG/viagem/maragogiALNordeste.jpg);
+    background-size: cover;
+    background-position: top center;
+}
+
+#nordeste6 {
+    background-image: url(/assets/IMG/viagem/natalRNNordeste.jpg);
+    background-size: cover;
+    background-position: top center;
+}
+
+#nordeste7 {
+    background-image: url(/assets/IMG/viagem/portoGalinhasPENordeste.jpg);
+    background-size: cover;
+    background-position: top center;
+}
+
+#nordeste8 {
+    background-image: url(/assets/IMG/viagem/serraCapivaraNordeste.jpg);
+    background-size: cover;
+    background-position: top center;
+}
+
+#cOeste1 {
+    background-image: url(/assets/IMG/viagem/brasiliaDFCentro.jpg);
+    background-size: cover;
+    background-position: top center;
+}
+
+#cOeste2 {
+    background-image: url(/assets/IMG/viagem/pantanalMSCentro.jpg);
+    background-size: cover;
+    background-position: top center;
+}
+
+#cOeste3 {
+    background-image: url(/assets/IMG/viagem/caldasNovasGOCentro.jpg);
+    background-size: cover;
+    background-position: top center;
+}
+
+#cOeste4 {
+    background-image: url(/assets/IMG/viagem/terraRoncaGOCentro.jpg);
+    background-size: cover;
+    background-position: top center;
+}
+
+#cOeste5 {
+    background-image: url(/assets/IMG/viagem/praiaFigueiraMSCentro.jpg);
+    background-size: cover;
+    background-position: top center;
+}
+
+#cOeste6 {
+    background-image: url(/assets/IMG/viagem/chapadaVeadeirosGOCentro.jpg);
+    background-size: cover;
+    background-position: top center;
+}
+
+#cOeste7 {
+    background-image: url(/assets/IMG/viagem/bonitoMSCentro.jpg);
+    background-size: cover;
+    background-position: top center;
+}
+
+#cOeste8 {
+    background-image: url(/assets/IMG/viagem/araguaiaGOCentro.jpg);
+    background-size: cover;
+    background-position: top center;
 }
