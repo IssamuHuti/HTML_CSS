@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    font-size: 24px;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.menu {
+    width: 100%;
+    height: 60px;
+    padding: 0 40px 0 40px;
+    background: yellow;
+    display: flex;
+    align-items: center;
+    position: fixed;
+}
+
+a {
+    color: black;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+ul {
+    display: flex;
+    width: 30%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    list-style: none;
+}
+
+li {
+    display: block;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 10px 0 10px;
+}
+
+li:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    width: 100%; /* Ajuste para o tamanho desejado */
+    height: 100vh;
+    margin: auto;
+}
+
+.carousel-wrapper {
+    overflow: hidden;
+    width: calc(4 * (200px + 10px)); /* 4 caixas visíveis */
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.carousel-content {
+    display: flex;
+    /* width: 2400px; 12 itens (ajustável) */
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    width: 200px;
+    height: 200px;
+    background: #007bff;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    border-radius: 8px;
+}
+
+button {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #555;
+}

@@ -31,8 +31,8 @@ h1 {
 }
 
 .caixaOpcao {
-    width: 150px;
-    height: 250px;
+    width: 110px;
+    height: 200px;
     background: darkgreen;
     position: fixed;
     top: 33.33%;
@@ -84,7 +84,8 @@ li {
 }
 
 .regiao {
-    max-width: 1300px;
+    max-width: 1100px;
+    min-width: 600px;
     height: 100vh;
     margin: 0 auto;
     padding-top: 80px;
@@ -104,8 +105,8 @@ li {
 }
 
 .regiao .img {
-    width: 21%;
-    height: 35%;
+    width: 22%;
+    height: 33%;
     align-items: center;
     margin: 0 10px 0 10px;
 }
@@ -128,7 +129,7 @@ li {
 }
 
 .descricao {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: bold;
     text-align: center;
     padding-top: 10px;
@@ -279,6 +280,102 @@ li {
 
 #cOeste8 {
     background-image: url(/assets/IMG/viagem/araguaiaGOCentro.jpg);
+    background-size: cover;
+    background-position: top center;
+}
+
+#sudeste1 {
+    background-image: url(/assets/IMG/viagem/cristoRedentorRJSudeste.jpg);
+    background-size: cover;
+    background-position: top center;
+}
+
+#sudeste2 {
+    background-image: url(/assets/IMG/viagem/paoAcucarRJSudeste.jpg);
+    background-size: cover;
+    background-position: top center;
+}
+
+#sudeste3 {
+    background-image: url(/assets/IMG/viagem/palacioAnchietaESSusdeste.jpg);
+    background-size: cover;
+    background-position: top center;
+}
+
+#sudeste4 {
+    background-image: url(/assets/IMG/viagem/itaunasESSudeste.jpg);
+    background-size: cover;
+    background-position: top center;
+}
+
+#sudeste5 {
+    background-image: url(/assets/IMG/viagem/capitolioMGSudeste.jpg);
+    background-size: cover;
+    background-position: top center;
+}
+
+#sudeste6 {
+    background-image: url(/assets/IMG/viagem/serraCanastraMGSudeste.jpg);
+    background-size: cover;
+    background-position: top center;
+}
+
+#sudeste7 {
+    background-image: url(/assets/IMG/viagem/ubatubaSPSudeste.jpg);
+    background-size: cover;
+    background-position: top center;
+}
+
+#sudeste8 {
+    background-image: url(/assets/IMG/viagem/camposJordaoSPSudeste.jpg);
+    background-size: cover;
+    background-position: top center;
+}
+
+#sul1 {
+    background-image: url(/assets/IMG/viagem/cataratasIguacuPRSul.jpg);
+    background-size: cover;
+    background-position: top center;
+}
+
+#sul2 {
+    background-image: url(/assets/IMG/viagem/jardimBotanicoPRSul.jpg);
+    background-size: cover;
+    background-position: top center;
+}
+
+#sul3 {
+    background-image: url(/assets/IMG/viagem/parqueAvesPRSul.jpg);
+    background-size: cover;
+    background-position: top center;
+}
+
+#sul4 {
+    background-image: url(/assets/IMG/viagem/betoCarreroSCSul.jpg);
+    background-size: cover;
+    background-position: top center;
+}
+
+#sul5 {
+    background-image: url(/assets/IMG/viagem/gramadoRSSul.jpg);
+    background-size: cover;
+    background-position: top center;
+}
+
+#sul6 {
+    background-image: url(/assets/IMG/viagem/camburiuSCSul.jpg);
+    background-size: cover;
+    background-position: top center;
+}
+
+#sul7 {
+    background-image: url(/assets/IMG/viagem/ilhaMelPRSul.jpg);
+    background-size: cover;
+    background-position: top center;
+}
+
+#sul8 {
+    background-image: url(/assets/IMG/viagem/buracoPadrePRSul.jpg);
     background-size: cover;
     background-position: top center;
 }
