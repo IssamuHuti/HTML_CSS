@@ -14,12 +14,14 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
     font-family: "Open Sans", sans-serif;
     font-size: 2rem;
     color: var(--primary-color);
+    line-height: 1.5;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -32,7 +34,10 @@ h1 {
 }
 
 h2 {
-    font-size: 5.5rem;
+    font-size: 6rem;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    line-height: 1.2;
 }
 
 h3 {
@@ -55,6 +60,10 @@ a {
     text-decoration: none;
 }
 
+p {
+    margin-bottom: 1rem;
+}
+
 .main-bg {
     background-image: url(/assets/IMG/mainSVG.svg);
     background-size: cover;
@@ -64,6 +73,7 @@ a {
 
 .white-bg {
     background: var(--white-color);
+    color: var(--primary-color);
 }
 
 .main-content {
@@ -76,6 +86,10 @@ a {
     min-height: 100vh;
 }
 
+.menu-spacing {
+    height: var(--gap);
+}
+
 .menu {
     background: var(--white-color);
     position: fixed;
@@ -84,6 +98,7 @@ a {
     right: 0;
     width: 100%;
     border-bottom: 0.1rem solid var(--light-gray-color);
+    z-index: 1;
 }
 
 .menu-content {
@@ -130,4 +145,41 @@ a {
 .menu ul li a:hover::after {
     width: 50px;
     left: 25%;
+}
+
+.intro-content {
+    position: relative;
+    top: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--gap);
+    height: 100vh;
+}
+
+.intro-text-content, .intro-img {
+    display: block;
+    flex-direction: column wrap;
+    justify-content: center;
+}
+
+.intro-text-content h2 {
+    font-size: 6rem;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.intro-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.top3-content {
+    max-width: 64rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    padding-top: 5rem;
 }
